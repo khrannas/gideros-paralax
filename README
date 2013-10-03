@@ -1,0 +1,22 @@
+This project is based from http://giderosmobile.com/forum/discussion/387/parallax-background
+
+All thanks to Adnaan(for creating code snippet) and Teranth(for creating a class and cleaning code).
+
+For use this code, add ParaBG.lua to your project.
+Set image you want to add as paralax background
+
+	local bgs = {
+		bg1 = "bg1.png",
+		bg2 = "bg2.png",
+		...
+	}
+
+then instantiate the class using
+	
+	local bg = ParaBG.new(bgs, 3)
+
+it will create paralax background with speed 3 after that add bg to the scene
+
+	stage:addChild(bg)
+
+That's it. Insert as many layer to your background.
